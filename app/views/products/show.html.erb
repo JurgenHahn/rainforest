@@ -1,0 +1,9 @@
+<h1>Products#show</h1>
+<p>Find me in app/views/products/show.html.erb</p>
+<%= link_to 'Back', products_path %><%= link_to 'Edit', edit_product_path %>
+
+
+<%= @product.name %>
+<%= @product.description %>
+<%= @product.price_in_cents %>
+<img src="<%=@product.image_url%>">
